@@ -19,7 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Note_details"></activity>
+        <activity android:name=".Note_details" />
+
+        <provider
+            android:name=".NoteContentProvider"
+            android:authorities="navjot.nikhil.flashnote.userAuthority"
+            android:enabled="true"
+            android:exported="true"></provider>
     </application>
 
 </manifest>

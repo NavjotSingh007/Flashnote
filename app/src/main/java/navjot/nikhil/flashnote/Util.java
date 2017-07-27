@@ -1,5 +1,7 @@
 package navjot.nikhil.flashnote;
 
+import android.net.Uri;
+
 /**
  * Created by hp on 7/27/2017.
  */
@@ -11,7 +13,7 @@ public class Util {
     public static final int DB_VERSION = 1;
     public static final String DB_NAME = "note_db.db";
 
-    public static final String TAB_NAME = "Users";
+    public static final String TAB_NAME = "note_table";
     public static final String COL_ID = "_ID";
     public static final String COL_HEADING = "HEADING";
     public static final String COL_DESCRIPTION = "DESCRIPTION";
@@ -26,7 +28,7 @@ public class Util {
             "CITY text" +
             ")";
 
-    public static final Uri USER_URI = Uri.parse("content://com.auribises.cpdemogwa.usercontentprovider/"+TAB_NAME);
+    public static final Uri USER_URI = Uri.parse("content://navjot.nikhil.flashnote.userAuthority/"+TAB_NAME);
 
     public static final String KEY_USER = "keyUser";
 }

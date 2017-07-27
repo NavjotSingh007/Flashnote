@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -14,7 +15,7 @@ import java.util.ArrayList;
  * Created by hp on 7/27/2017.
  */
 
-public class NoteAdapter {
+public class NoteAdapter extends ArrayAdapter<Note> {
 
     Context context;
     int resource;
